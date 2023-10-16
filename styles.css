@@ -706,7 +706,7 @@ span {
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--second-bg-color);
+        background: var(--main-color);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         z-index: 1;
         transition: .25s ease;
@@ -724,7 +724,7 @@ span {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: yellowgreen;
+        background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         z-index: -1;
         transition: .25s ease;
