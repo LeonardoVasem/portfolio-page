@@ -273,81 +273,27 @@ span {
     color: var(--main-color);
 }
 
-.about-img img {
+.gallery {
+    width: 90%;
+    margin: 20px auto;
+    columns: 2;
+    column-gap: 20px;
+}
+
+.gallery .gallery-item {
     width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
+    margin-bottom: 10px;
+    break-inside: avoid;
 }
 
-.about-img > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gallery .gallery-item img {
+    max-width: 100%;
+    border-radius: 15px;
 }
 
-.about-img > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}    
-
-.about-img > div > video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}    
-
-.about-img {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
-    grid-auto-flow: dense;
-}
-
-.about-img .wide {
-    grid-column: span 2;
-}
-
-.about-img .tall {
-    grid-row: span 2;
-}
-
-.about-img .big {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.about-img video {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-@media(max-width: 560px)
-{
-    .wide{
-        grid-row: span 1;
-    }
-    .tall{
-        grid-column: span 1;
-    }
-    .big{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
-
-.about-content {
-    text-align: center;
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
+.gallery .gallery-item video {
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .btn-box.btns {
@@ -555,78 +501,87 @@ span {
     width: 60%;
 }
 
-.contact {
-    min-height: auto;
-    padding-bottom: 7rem;
+.btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 0 auto;
-    text-align: center;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 36px;
 }
 
-.contact form .input-box {
-    position: relative;
+input {
+    height: 56px;
+    border-radius: 12px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    width: 456px;
+    padding: 0 8px 0 16px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.input-name {
+    display: flex;
+    gap: 24px;
+}
+
+.input-name input {
+    width: 216px;
+}
+
+.btn-submit {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    width: 400px
+}
+
+.or-text {
+    font-size: 12px;
+    font-weight: 300;
+}
+.social-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.social {
+    width: 432px;
+    height: 64px;
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.contact form .input-box .input-field {
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
-}
-
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea {
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
+.social a {
+    text-decoration: none;
+    font-weight: 700;
     color: var(--text-color);
-    background: transparent;
-    border-radius: .6rem;
-    border: .2rem solid var(--main-color);
 }
 
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder {
-    color: var(--text-color);
-} 
-
-.contact form .focus {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--second-bg-color);
-    border-radius: .6rem;
-    z-index: -1;
-    transition: .5s;
-}
-
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus {
-    width: 100%;
-}
-
-.contact form .textarea-field {
-    position: relative;
-    margin: .8rem 0 2.7rem;
+.social-action {
     display: flex;
-}
-
-.contact form .textarea-field textarea {
-    resize: none;
-}
-
-.contact form .btn-box.btns .btn {
+    align-items: center;
+    gap: 8px;
+    color: var(--main-color);
     cursor: pointer;
+}
+
+::placeholder, .handle, .or-text {
+    color: var(--text-color);
 }
 
 .footer {
