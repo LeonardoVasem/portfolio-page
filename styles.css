@@ -274,26 +274,30 @@ span {
 }
 
 .gallery {
-    width: 90%;
-    margin: 20px auto;
-    columns: 2;
-    column-gap: 20px;
+    width: 100%;
+    margin: 4px auto;
+    columns: 3;
+    column-gap: 4px;
 }
 
 .gallery .gallery-item {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     break-inside: avoid;
 }
 
 .gallery .gallery-item img {
     max-width: 100%;
-    border-radius: 15px;
 }
 
 .gallery .gallery-item video {
     max-width: 100%;
-    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .gallery {
+        columns: 1;
+    }
 }
 
 .btn-box.btns {
@@ -485,20 +489,28 @@ span {
     width: 30%;
 }
 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 50%;
+}
+
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 95%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 70%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
     width: 90%;
 }
 
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+    width: 80%;
+}
+
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 60%;
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 80%;
 }
 
 .btn {
@@ -540,7 +552,7 @@ input {
 .btn-submit {
     background-color: var(--main-color);
     color: var(--bg-color);
-    width: 400px
+    width: 300px
 }
 
 .or-text {
@@ -578,6 +590,26 @@ input {
     gap: 8px;
     color: var(--main-color);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .social {
+        width: 350px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    .input-name {
+        gap: 20px;
+        width: 350px;
+    }
+
+    .input-name input {
+        width: 165px;
+    }
+    
 }
 
 ::placeholder, .handle, .or-text {
