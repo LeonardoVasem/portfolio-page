@@ -96,9 +96,9 @@ section {
 }
 
 .home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 900;
-    line-height: 1.3;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .home-content h1 span {
@@ -119,7 +119,7 @@ section {
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;             
-    background-position: -33rem 0;
+    background-position: -43rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
@@ -138,7 +138,7 @@ section {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin: 2rem 0 4rem;
 }
 
@@ -331,34 +331,14 @@ span {
 
 .education-column .title {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
-}
-
-.education-column .education-box {
-    border-left: .2rem solid var(--main-color);
-}
-
-.education-box .education-content {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.education-box .education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background: var(--main-color);
-    border-radius: 50%;
+    margin: 0 0 1rem 2rem;
 }
 
 .education-content .content {
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
+    background-color: var(--second-bg-color);
+    border-radius: 7px;
     margin-bottom: 2rem; 
     overflow: hidden;
 }
@@ -403,6 +383,7 @@ span {
     min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
+    border-radius: 7px ;
 }
 
 .skills .skills-row {
@@ -833,7 +814,7 @@ input {
     0%,
     10%,
     100% {
-        background-position: -33rem 0;
+        background-position: -43rem 0;
     }
 
     65%,
